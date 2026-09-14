@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Click to Edit Page",
+  "version": "1.2",
+  "description": "Click the extension icon to toggle contenteditable on the current webpage.",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {}
+}
